@@ -1,12 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
-import Header from "../components/header"
-import Footer from "../components/footer"
+import Layout from "../components/layout"
 
 export default () => {
   return (
-    <div>
-      <Header />
+    <Layout>
       <h1>Magicians</h1>
       <p>
         Also called sorcerers or sorceresses, they practice magic, and have been
@@ -15,7 +13,6 @@ export default () => {
       <p>
         <Link to="/witchers">Witchers</Link>
       </p>
-      <Footer />
-    </div>
+    </Layout>
   )
 }
